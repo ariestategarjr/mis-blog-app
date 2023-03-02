@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
+@extends('layouts/main')
+
+@section('container')
     <h1>About</h1>
-</body>
-</html>
+
+    <img src="{{ $image }}" alt="{{ $name }}" class="img-thumbnail w-25">
+
+    <p>Nama  : {{ $name }}</p>
+    <p>Email : {{ $email }}</p>
+    
+@endsection
