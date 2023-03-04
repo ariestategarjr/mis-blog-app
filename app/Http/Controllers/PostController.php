@@ -16,7 +16,7 @@ class PostController extends Controller
         ]);
     }
 
-    public function find($slug)
+    public function where($slug)
     {
         return view('posts', [
             "title" => "Post",
