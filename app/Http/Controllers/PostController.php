@@ -16,11 +16,11 @@ class PostController extends Controller
         ]);
     }
 
-    public function where($slug)
+    public function show($id)
     {
         return view('posts', [
             "title" => "Post",
-            "post" => Post::find($slug)
+            "post" => Post::find($id)
         ]);
     }
 }
