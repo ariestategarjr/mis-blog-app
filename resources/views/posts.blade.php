@@ -9,6 +9,7 @@
         {!! $post->body !!}
     </article>
 
+    
     <a href="/blog">Back to blog</a>
 
 @endsection
